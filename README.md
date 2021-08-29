@@ -2,7 +2,7 @@
 This is a docker image based on zabbix-server-mysql (ubuntu) with a signal-cli preinstalled.
 
 ## Installation
-You start this container just like https://hub.docker.com/r/zabbix/zabbix-server-mysql, but you should mount `/root/.local/share/signal-cli` to the host, because it contains all data of the attached account.
+You start this container just like https://hub.docker.com/r/zabbix/zabbix-server-mysql, but you should mount `/var/lib/zabbix/.local/share/signal-cli` to the host, because it contains all data of the attached account.
 
 You'll still need to configure signal-cli according to https://github.com/AsamK/signal-cli/wiki/Quickstart#set-up-an-account or link an existing account as described in https://github.com/AsamK/signal-cli/wiki/Linking-other-devices-(Provisioning).
 
