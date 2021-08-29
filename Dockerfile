@@ -1,6 +1,6 @@
 ARG ZABBIX_VERSION
 FROM zabbix/zabbix-server-mysql:$ZABBIX_VERSION
-VOLUME [ "/root/.local/share/signal-cli" ]
+VOLUME [ "/var/lib/zabbix/.local/share/signal-cli" ]
 
 USER root
 
